@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def update
     @student.change_active
-    redirect_to 'student_path(@student)'
+    redirect_to student_path(@student)
   end
 
   private
