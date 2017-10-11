@@ -2,4 +2,3 @@
 <% status = @student.active ? "active" : "inactive" %>
 <p>This student is currently <%=status%></p>
 <%= link_to "Activate/Inactivate #{@student.to_s}", activate_student_path(@student) %>
-
